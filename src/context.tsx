@@ -73,7 +73,7 @@ export const QuestionnaireProvider = ({
       }
 
       if (
-        (question?.type === "multiple" || question?.type === "radio") &&
+        (question.type === "multiple" || question.type === "radio") &&
         !answer.answers.every((entry) =>
           question.options.find((t) => t === entry)
         )
